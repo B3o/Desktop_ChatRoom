@@ -8,7 +8,7 @@
 
 ![注册](https://raw.githubusercontent.com/bbbemore/Desktop_ChatRoom/master/src/main/resources/Project_screenshots/register.jpg)
 <p align="center">
-    注册界面(可上传头像，防止XSS注入)
+    注册界面(可上传头像，表单前后端都做了防XSS注入处理)
 </p>
 
 ![细节](
