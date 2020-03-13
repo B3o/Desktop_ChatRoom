@@ -1,0 +1,82 @@
+#left {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width:480px;
+    height:100%;
+    background: url("/images/01-1.jpg");
+    animation: am 16s ease-in infinite;
+}
+@keyframes am {
+    25% {
+        background-image: url("/images/01-2.jpg");
+    }
+    50% {
+        background-image: url("/images/01-3.jpg");
+    }
+    75% {
+        background-image: url("/images/01-4.jpg");
+    }
+    100% {
+        background-image: url("/images/01-1.jpg");
+    }
+
+}
+.logo {
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: url(/images/logo.png) no-repeat;
+	background-size: 36px 43px;
+	z-index: 2;
+	height: 43px;
+	line-height: 43px;
+	padding-left: 46px;
+	margin-left: 30px;
+	margin-top: 18px;
+	font-size: 36px;
+	display: block;
+	color: #000;
+}
+a.logo:hover {
+	color: black;
+	text-decoration: none;
+}
+.welcome {
+	font-size: 44px;
+	margin-bottom: 20px;
+	margin-top: 126px;
+}
+.header {
+	font-size: 28px;
+	margin-bottom: 64px;
+	line-height: 1.2;
+	color: #333;
+}
+.header a {
+	font-size: 24px;
+}
+a {
+	color: #2b72ff;
+}
+#username {
+	height: 50px;
+}
+#password {
+	height: 50px;
+}
+
+ input::-webkit-input-placeholder { /* placeholder颜色  */
+       color: #aab2bd;
+       /* placeholder字体大小  */
+       font-size: 22px;
+    }
+#login_btn{
+	border: 1px #3003ff solid;
+	border-radius: 4px;
+	background-color: #3487ff;
+	width: 100%;
+	height: 60px;
+	font-size: 24px;
+	margin-top: 30px;
+}

@@ -1,0 +1,63 @@
+ul {
+    padding:0px;
+    margin: 0px;
+}
+ul>li{
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.clear{
+    clear: both;
+}
+*{
+    font-family: -apple-system,"Helvetica Neue",Arial,"PingFang SC","Hiragino Sans GB",STHeiti,"Microsoft YaHei","Microsoft JhengHei","Source Han Sans SC","Noto Sans CJK SC","Source Han Sans CN","Noto Sans SC","Source Han Sans TC","Noto Sans CJK TC","WenQuanYi Micro Hei",SimSun,sans-serif;
+}
+#dialog{
+    border-radius: 8px;
+    background: linear-gradient(60deg, rgba(101, 166, 255, 0.9), rgba(55, 24, 255, 0.9));
+    width: 300px;
+    height: 100px;
+    box-shadow:0 0 8px burlywood;
+    position: absolute;
+    z-index: 11;
+    left: calc(50% - 150px);
+    top: calc(50% - 50px);
+    text-align: center;
+    color: white;
+    animation: mydialog 2s;
+    animation-fill-mode: forwards;
+    /*让都规划保留最后一帧   infinite是循环播放*/
+    line-height: 100px;
+}
+@keyframes mydialog {
+    30% {transform:rotate(10deg); opacity:.7; }
+    60% {transform: rotate(-10deg);opacity:.4;}
+    99% {opacity:0;bottom:0px;}
+    100%{ visibility: hidden;}
+}
+
+.rltv{
+    position: relative;
+}
+
+#submitBtn{
+    width: 240px;
+    height: 36px;
+    border-radius: 4px;
+    line-height: 32px;
+    box-shadow: 0 0 4px #337EEB;
+    background-color: #00B6FA;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    border: none;
+    outline: none;
+}

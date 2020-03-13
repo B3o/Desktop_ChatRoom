@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en"xmlns:xmls="http://www.w3.org/1999/xhtml" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>快乐星球桌面系统</title>
+    <link rel="shortcut icon"  href="/images/bq.png">
+    <link rel="stylesheet" href="/css/core.css">
+    <link rel="stylesheet" href="/css/login.css">
+</head>
+<body>
+<div id="desktop">
+    <ul>
+        <li id="qq">
+            <img src="/images/chat.png" alt=""><br>
+            <div class="app_name">真心话大冒险</div>
+        </li>
+        <li>
+            <img src="/images/game.ico" alt=""><br>
+            <div class="app_name">英雄联盟</div>
+        </li>
+        <li>
+            <img src="/images/idea.ico" alt="">
+            <div class="app_name">Idea</div>
+        </li>
+        <li>
+            <img src="/images/ps.ico" alt="">
+            <div class="app_name">PhotoShop</div>
+        </li>
+        <li>
+            <img src="/images/netdisk_logo.ico" alt="">
+            <div class="app_name">百度网盘</div>
+        </li>
+
+    </ul>
+</div>
+<div class="footer">
+    <div class="start"></div>
+    <ul id="task">
+        <li id="qq_task"></li>
+    </ul>
+    <div class="menu"></div>
+    <div class="time"><span>19:57</span><span>2019/4/8</span></div>
+    <div class="little_icons"></div>
+</div>
+
+<div id="app">
+    <div id="tencent" draggable="true">
+        <div id="qqheader">
+            <div id="left_tool" class="fl">QQ</div>
+            <div id="right_tool" class="fr">
+                <a id="setting" href="javascript:;"></a>
+                <a id="small" href="javascript:;"></a>
+                <a id="cls" href="javascript:;"></a>
+            </div>
+        </div>
+        <div id="qqbody">
+            <img id="face" src="/images/default_face.png" alt="">
+            <form action="/doLogin" method="post">
+                <ul>
+                    <li class="rltv">
+                        <input th:value="${user}" name="username" class="txt accout" id="username" placeholder="QQ号码/手机/邮箱" type="text">
+                        <span class="focus_border"></span>
+                    </li>
+                    <li class="rltv">
+                        <input name="password" class="txt pwd" placeholder="密码" type="password">
+                        <span class="focus_border"></span>
+                    </li>
+                    <li id="box">
+                        <span>自动登录</span>
+                        <span>记住密码</span>
+                        <a href="javascript:;">找回密码</a>
+                    </li>
+                    <li class="clear"><input id="submitBtn" type="submit" value="登录"></li>
+                    <li>
+                        <a id="register" href="javasctipt:;">注册账号</a>
+                        <a id="qrcode" href="javascript:;"></a>
+                    </li>
+                </ul>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- 多选遮罩 -->
+<div class='mask'></div>
+<!-- 右键菜单 -->
+<div class="context_menu">
+    <ul class="group">
+        <li><span>Ctrl+Q</span>查看大图标(Q)</li>
+        <li><span>→</span>排序方式</li>
+        <li class="refresh"><span>Ctrl+E</span>刷新(E)</li>
+    </ul>
+    <ul class="group">
+        <li><span>Ctrl+C</span>复制(C)</li>
+        <li><span>Ctrl+X</span>剪切(X)</li>
+        <li><span>Ctrl+V</span>粘贴(V)</li>
+    </ul>
+    <ul class="group">
+        <li class="newFile"><span>Ctrl+Shift+E</span>新建文件夹(N)</li>
+    </ul>
+    <ul class="group">
+        <li><span></span>创建快捷方式</li>
+        <li class="deleteThis"><span>Ctrl+O</span>删除(O)</li>
+        <li class="reload"><span>Ctrl+O</span>恢复(R)</li>
+        <li class="rename"><span>Ctrl+E</span>重命名(E)</li>
+    </ul>
+    <ul class="group">
+        <li><span></span>属性</li>
+    </ul>
+</div>
+
+
+
+<script src="/js/jquery-2.1.1.min.js"></script>
+<script src="/js/core.js"></script>
+<script src="/js/register.js"></script>
+<div th:replace="dialog::msgDialog"></div>
+<script src="/js/login.js"></script>
+</body>
+</html>

@@ -1,0 +1,268 @@
+#left{
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width:30%;
+    height:100%;
+    background: url("/images/01-1.jpg") no-repeat;
+    background-size: 480px 100%;
+    animation: am 16s infinite step-end;
+    z-index: -1;
+}
+
+@keyframes am {
+    25% {
+        background-image: url("/images/01-1.jpg");
+    }
+    50% {
+        background-image: url("/images/01-2.jpg");
+    }
+    75% {
+        background-image: url("/images/01-3.jpg");
+    }
+    100% {
+        background-image: url("/images/01-4.jpg");
+    }
+
+}
+.qqlh{
+    line-height: 20px !important;
+    left: -10px;
+    bottom: 9px;
+    position: relative;
+    background: linear-gradient(126deg,#fc4754,#ff794c);
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+    width: 80px;
+    display: inline-block;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    font-weight: 300;
+    height: 24px;
+    font-size: 16px;
+    white-space: nowrap;
+    /*强制不换行*/
+}
+#menu{
+    float: right;
+    min-width: 510px;
+    /*保证menu的最小宽度*/
+}
+.logo{
+    position: relative;
+    z-index: 2;
+}
+.yxzh{
+    background:url("/images/email.png") no-repeat 0px top;
+    text-indent: 35px;
+    /*文本缩进*/
+    white-space: nowrap;
+}
+.yxzh:hover{
+    background: url("/images/email_hover.png") no-repeat 0px top;
+}
+#menu a{
+    display: inline-block;
+    color: #666666;
+    line-height: 30px;
+}
+#menu a:hover{
+    color: #000;
+}
+.jtzw{
+    background: url("/images/down.png") no-repeat right center;
+    width: 80px;
+}
+.jtzw:hover{
+    background: url("/images/up.png") no-repeat right center;
+    width: 80px;
+}
+.jtzw ul li{
+    font-size: 50px;
+}
+#menu>li{
+    float: left;
+    margin-right: 40px;
+    margin-top:10px;
+}
+#menu>li:nth-of-type(n+2){
+    margin-top: 15px;
+}
+.top{
+    border-top: 1px;
+    margin-left: 50px;
+}
+.top_t{
+    margin-left: 50px;
+}
+#vipMenu{
+    width: 290px;
+    height: 110px;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(155,142,118,0.7);
+    position: absolute;
+    z-index: 3;
+    background-color: white;
+    left: 500px;
+    display: none;
+}
+#menu li ul{display: none;}
+#menu li:hover ul {
+    display: block;
+    position:relative;
+    margin-left: -40px;}
+#menu li:hover ul li{
+    margin-top:20px;
+}
+#menu li:hover ul li a {
+    display: block;
+    text-align: left;
+    border-bottom: 1px;
+}
+#vipMenu>div:first-child{
+    border-bottom: 1px solid #e6e6e6;
+    height: 48px;
+}
+#vipMenu>div:last-child{
+    line-height: 61px;
+    text-align: center;
+}
+#vipMenu>div:last-child>a{
+    color: #359eff;
+    padding: 0 5px;
+}
+#vipMenu>div:last-child>a:hover{
+    color: #2b72ff;
+}
+#vipTxt {
+    width: 240px;
+    height: 45px;
+    border: none;
+    border-right: 1px solid #e6e6e6;
+    outline: none;
+    /*焦点边框*/
+    font-size: 16px;
+    text-indent: 10px;
+    /*缩进*/
+}
+#search{
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    border-top-right-radius: 8px;
+    background: url("/images/search.png") no-repeat center;
+    float:right;
+    position: absolute;
+}
+#search:hover{
+    background: url("/images/search-hover.png") no-repeat center,linear-gradient(56deg,#fe4754,#fe6c4e);
+    border-top-right-radius: 8px;
+    float:right;
+    position: absolute;
+}
+/*表单部分*/
+#main{
+    width: 480px;
+    margin: auto;
+    /*保证居中*/
+    position: relative;
+    left: 230px;
+    top: 120px;
+}
+.zt1{
+    font-size: 44px;
+    margin-bottom: 25px;
+}
+.zt2{
+    font-size: 28px;
+    margin-bottom: 60px;
+}
+.zt3{
+    color: #359eff;
+    font-size: 24px;
+    position: absolute;
+    float: right;
+    top: 4px;
+    margin-top: 85px;
+    margin-left: 100px;
+}
+.zt3:hover{
+    color:#2b72ff;
+}
+.txt{
+    width: 478px;
+    height: 48px;
+    border-radius: 4px;
+    border: 1px solid #aaaaaa;
+    outline: none;
+    text-indent: 20px;
+    font-size: 20px;
+}
+.txt:hover{
+    border-color: #777777;
+}
+.txt:focus{
+    border-color: #549df8;
+}
+.mg{
+    margin-bottom: 30px;
+}
+#reg{
+    border: none;
+    outline: none;
+    width: 482px;
+    height: 60px;
+    text-align: center;
+    border-radius: 4px;
+    box-shadow: 0 5px 8px 0 rgba(24,95,255,.1);
+    color: #fff;
+    background-color: #3487ff;
+    background-image: linear-gradient(0deg,#398bff,#3083ff);
+    font-size: 24px;
+}
+#reg:hover{
+    background-color: #3580eb;
+    background-image: linear-gradient(0deg,#3580eb,#2c79eb);
+
+}
+#read{
+    font-size: 12px;
+    color: #aaa;
+    text-indent: 20px;
+    cursor: default;
+    /*鼠标悬停样式  默认指针*/
+    user-select: none;
+}
+.uncheck{
+    background: url("/images/checkbox_normal.png") no-repeat left center;
+}
+.checked {
+    background: url("/images/checkbox_check.png") no-repeat left center;
+}
+#copyright{
+    text-align: center;
+    font-size: 14px;
+    color: #bbb;
+    margin-top: 150px;
+}
+#faceImg{
+    display: block;
+    margin: auto;
+    width: 100px;
+    height: 100px;
+    padding: 0 15px;
+}
+.small{
+    width: 50%;
+    transform: scale(.5,1) translateX(-240px);
+}
+#face{
+    display: none;
+}
+.faceImg{
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin: 15px auto !important;
+}

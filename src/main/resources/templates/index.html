@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html  xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+    <!-- 插入logo到浏览器页签 -->
+    <link rel="shortcut icon" href="/images/chat.png">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/core.css">
+    <link rel="stylesheet" href="/emoji/lib/css/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href="/emoji/dist/css/jquery.emoji.css">
+    <script type="text/javascript" src="/js/jquery-2.1.1.min.js"></script>
+    <script src="/emoji/lib/script/jquery.mCustomScrollbar.min.js"></script>
+    <script src="/emoji/src/js/jquery.emoji.js"></script>
+</head>
+<body>
+<!--用来控制抖一抖次数的功能-->
+<input id="dydValue" value="1" type="hidden">
+<div id="backup">撤回</div>
+<input type="hidden" id="messageId">
+<div id="win">
+    <div id="warning">您发送窗口抖动过于频繁，请稍后再发。</div>
+    <input id="username" type="hidden" th:value="${session.user.username}">
+    <div draggable="true" id="title">真心话冒险岛</div>
+    <div id="chat">
+        <div id="record">
+            <!--<div>-->
+            <!--<img src="/images/default_face.png" class="chatFace">-->
+            <!--<div class="float_left">-->
+            <!--<span>小明</span>-->
+            <!--<span>这聊天内容这是聊天是聊天内容这是聊天内容</span>-->
+            <!--</div>-->
+            <!--<div style="clear:both;"></div>-->
+            <!--</div>-->
+        </div>
+        <div id="send">
+            <div id="tools">
+                <a id="emojiBtn" href="javascript:;"></a>
+                <input type="file" multiple id="file" style="display:none;">
+                <a id="imgBtn" href="javascript:;"></a>
+                <a id="dyd" href="javascript:;"></a>
+            </div>
+            <div id="textInput" contenteditable="true">
+
+            </div>
+            <div id="btns">
+                <a id="sendBtn" href="javascript:;">发送(<u>S</u>)</a>
+                <a id="clsBtn" href="javascript:;">关闭(<u>C</u>)</a>
+            </div>
+        </div>
+    </div>
+    <div id="user_list">
+        <div class="online">在线成员</div>
+        <ul id="online_people">
+            <!--<li><span><img src="/images/default_face.png"></span><span>小明</span></li>-->
+        </ul>
+    </div>
+</div>
+</body>
+<script src="/js/index.js"></script>
+<script src="/js/core.js"></script>
+</html>

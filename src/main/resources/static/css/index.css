@@ -1,0 +1,356 @@
+@charset "UTF-8";
+* {
+    margin: auto;
+}
+
+#win {
+    width: 700px;
+    height: 600px;
+    border-radius: 8px;
+    box-shadow: 0 0 8px #5e5e5e;
+    position: absolute;
+    left: calc(50% - 350px);
+    top: 50px;
+}
+
+#title {
+    user-select: none; /*不允许选择文本*/
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    font-size: 16px;
+    font-family: 微软雅黑;
+    text-align: center;
+    line-height: 32px;
+    color: rgb(254, 255, 246);
+    background: linear-gradient(to right, rgba(0, 184, 255, 1), rgba(255, 138, 53, 0.6));
+}
+
+#chat {
+    float: left;
+    border: 1px solid #9d9d9d;
+    width: 547px;
+    height: 568px;
+    border-bottom-left-radius: 8px;
+    background: white;
+}
+
+#user_list {
+    float: left;
+    border: 1px solid #9d9d9d;
+    border-left: none;
+    width: 150px;
+    height: 568px;
+    border-bottom-right-radius: 8px;
+    background: white;
+}
+
+#record {
+    height: 308px;
+    border-bottom: 1px solid #9d9d9d;
+}
+
+#tools > a {
+    text-decoration: none;
+    display: block;
+    width: 30px;
+    height: 24px;
+    float: left;
+    margin-left: 5px;
+}
+
+#tools {
+    margin: 5px 0px;
+}
+
+#tools > a:hover {
+    background-color: rgba(155, 153, 155, 0.9);
+    border-radius: 4px;
+}
+
+#emojiBtn {
+    background: url("/images/bq.png") no-repeat center;
+}
+
+#imgBtn {
+    background: url("/images/tp.png") no-repeat center;
+}
+
+#dyd {
+    background: url("/images/zd.png") no-repeat center;
+}
+
+#textInput {
+    height: 170px;
+    clear: left;
+    outline: none;
+    padding: 0px 10px;
+    font-size: 12px;
+    font-family: "微软雅黑";
+    overflow-y: auto;
+}
+
+*::-webkit-scrollbar {
+    width: 8px;
+}
+
+*::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: #9d9d9d;
+}
+
+#btns {
+    margin-top: 6px;
+}
+
+#btns > a {
+    display: block;
+    float: right;
+    margin-right: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    width: 80px;
+    line-height: 24px;
+    font-size: 12px;
+}
+
+#clsBtn {
+    color: black;
+    background: white;
+    border: 1px solid #9d9d9d;
+}
+
+#sendBtn {
+    color: white;
+    background: #5bc0de;
+    border: 1px solid #5bc0de;
+}
+
+.online {
+    font-size: 14px;
+    font-family: "微软雅黑";
+    padding: 5px 10px;
+    border-bottom: 1px solid #9d9d9d;
+}
+
+#online_people {
+    margin: 0px 10px;
+    padding: 0px;
+    list-style: none;
+    line-height: 30px;
+    overflow-y: auto;
+    height: 528px;
+    font-size: 14px;
+    font-family: "微软雅黑";
+
+}
+
+#online_people > li:hover {
+    background-color: rgba(138, 135, 245, 0.7);
+}
+
+#online_people img {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    position: relative;
+    top: 6px;
+}
+
+/*找到online_people里面每组span的第一个*/
+#online_people span:first-child {
+    margin-right: 10px;
+}
+
+
+/*------------*/
+#record {
+    padding:10px;/*内间距*/
+    font-size:12px;
+    font-family: "微软雅黑";
+    overflow-y: auto;
+}
+
+.face {
+    width:22px;
+    height: 22px;
+    border-radius: 50%;
+    display: block;
+    float:left;
+    position:relative;
+    top: 6px;
+}
+.float_left {
+    width:460px;
+    float:left;
+    line-height: 20px;
+    margin-left:10px;
+}
+.float_right{
+    width:460px;
+    float:right;
+    line-height: 20px;
+    margin-left:10px;
+}
+#record span:first-child{
+    color: #9d9d9d;
+    display:block;
+    margin-bottom: 4px;
+}
+#record span:last-child{
+    background-color: #9d9d9d;
+    padding:5px;
+    border-radius:8px;
+}
+.block {
+    display:inline-block;
+    line-height: 30px;
+    /*解决纯英文不换行问题*/
+    word-wrap: break-word;
+    word-break: break-all;
+    white-space: normal;
+}
+.qp>img {
+    position:relative;
+    top:5px;
+}
+#record>div {
+    margin-bottom:7px;
+}
+#login {
+    margin-top:25px;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(110, 135, 168, 0.7);
+    text-align: center;
+    line-height: 30px;
+    font-family: "微软雅黑";
+    font-size: 14px;
+    background-color: rgba(229, 166, 124, 0.7);
+}
+#tip {
+    color:red;
+    font-size: 16px;
+}
+.sendImg {
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(46, 68, 140, 0.7);
+    width:150px;
+}
+
+.chatFace {
+    float:left;
+    border-radius: 50%;
+    width:30px;
+    height: 30px;
+}
+
+.system_message {
+    font-size: 12px;
+    color: indianred;
+    font-family: "Microsoft YaHei";
+    text-align: center;
+}
+
+.chat {
+    display:inline-block;
+    cursor: default;
+}
+#backup:hover {
+    background-color: #e6e6e6;
+}
+#backup {
+    background-color: white;
+    user-select: none;
+    cursor: default;
+    width:150px;
+    text-align: center;
+    border-radius: 2px;
+    box-shadow: 0 0 3px black;
+    line-height: 24px;
+    font-size: 12px;
+    font-family: "Microsoft YaHei";
+    position: absolute;
+    z-index: 10;
+    display:none;
+}
+.system_online{
+    text-align: center;
+    font-size: 14px;
+    background-color: #34abe3;
+    color: white;
+    width: 250px;
+    margin: auto;
+    line-height: 30px;
+}
+
+.text {
+    display: inline-block;
+    word-wrap: break-word;
+    word-break: break-all;
+    white-space: normal;
+    line-height: 16px;
+    cursor: default;
+}
+.dyd{
+    background: url("/images/success.png")no-repeat 5px center #e5e5e5;
+    color: gray;
+    border-radius: 10px;
+    font-size: 12px;
+    line-height: 20px;
+    width: 250px;
+    margin: auto;
+    text-align: center;
+    text-indent: 30px;
+}
+#warning{
+    background: url("/images/warning.png") no-repeat 5px;
+    background-color: #badaf8;
+    background-size: 20px 20px;
+    text-indent: 35px;
+    color: black;
+    font-size: 12px;
+    position: absolute;
+    z-index: 20;
+    left: 1px;
+    top: 32px;
+    width: 547px;
+    line-height: 20px;
+    display: none;
+}
+.imgData{
+    max-width: 150px;/*小于150用本身宽度，大于150再进行限制*/
+    height: auto;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+html{
+    background-image: url("/images/test_bg.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+.backup{
+    width:250px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 12px;
+    margin:auto;
+    color:gray;
+    background-color: #e5e5e5;
+    line-height: 20px;
+}
+.text_me{
+    float: right !important;
+    position: relative !important;
+    right: -30px !important;
+    cursor: default;
+    top: 3px;
+}
+.chatFace_me{
+    float: right !important;
+}
+.span_me{
+    float: right;
+    position: relative;
+    right: -14px;
+}

@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="en" xmlns:xmls="http://www.w3.org/1999/xhtml" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <div id="dialog"
+         th:if="${msg != null}"
+         th:fragment="msgDialog"
+         th:text="${msg}"></div>
+</body>
+</html>

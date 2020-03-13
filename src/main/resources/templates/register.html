@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>欢迎注册Tencent</title>
+    <link rel="shortcut icon"  href="/images/logo.png">
+    <link rel="stylesheet" href="/css/core.css">
+    <link rel="stylesheet" href="/css/register.css">
+
+</head>
+<body>
+    <div th:replace="dialog::msgDialog"></div>
+    <!--左边广告轮播-->
+    <div id="left"></div>
+    <!--顶端头部菜单-->
+    <ul id="menu">
+        <li>
+            <a href="javascript:;" id="vip">
+                <img class="logo" src="/images/logo3.png" alt=""><div class="qqlh">QQ靓号</div>
+            </a>
+        </li>
+        <li><a class="yxzh" href="javascript:;">邮箱帐号</a></li>
+        <li><a class="jtzw" href="javascript:;">简体中文</a>
+            <ul>
+                <li class="top"><a href="javascript:;">繁體中文</a></li>
+                <li class="top_t"><a href="javascript:;">English</a></li>
+            </ul>
+        </li>
+        <li><a href="javascript:;">意见反馈</a></li>
+    </ul>
+    <!--搜索隐藏框-->
+    <div id="vipMenu">
+        <div>
+            <input placeholder="搜索QQ靓号，如“84262602”" id="vipTxt" type="text">
+            <a href="javascript:;" id="search"></a>
+            <!--javascript:;意味着取消跳转 不做事情-->
+        </div>
+
+        <div>
+            <a href="javascript:;">生日</a>
+            <a href="javascript:;">星座</a>
+            <a href="javascript:;">爱情</a>
+            <a href="javascript:;">手机</a>
+        </div>
+    </div>
+    <!--正文表单部分-->
+    <div></div>
+    <div id="main">
+        <form action="/doRegister" method="post" enctype="multipart/form-data">
+            <ul>
+                <li class="zt1">欢迎注册QQ</li>
+                <li class="zt2 fl">每一天，乐在沟通</li>
+                <li><a href="javascript:;" class="zt3">免费靓号</a></li>
+                <li class="mg"><input required class="txt" placeholder="昵称" type="text" name="username"></li>
+                <li class="mg"><input required class="txt" placeholder="密码" type="password" name="password"></li>
+                <li><input id="reg" type="submit" value="立即注册"></li>
+                <li>
+                    <input name="face" accept=".jpg,.gif,.png" id="face" type="file">
+                    <img title="选择头像" id="faceImg" src="/images/default_face.png" alt="">
+                </li>
+                <li id="read" class="uncheck">我已阅读并同意相关服务条款和隐私政策</li>
+                <li id="copyright">Copyright © 1998-2019 Bemore All Rights Reserved</li>
+            </ul>
+
+        </form>
+    </div>
+    <script src="/js/jquery-2.1.1.min.js"></script>
+    <script src="/js/core.js"></script>
+    <script src="/js/register.js"></script>
+</body>
+</html>

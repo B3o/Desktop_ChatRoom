@@ -1,0 +1,338 @@
+html{
+    /*background:url("/images/test_bg.jpg") no-repeat center 1px;*/
+    background-image: url("/images/test_bg.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+#desktop li {
+    width: 96px;
+    height: 83px;
+    float: left;
+    padding-top: 10px;
+    margin-right: 20px;
+    text-align: center;
+    user-select: none;
+    moz-user-select: -moz-none;
+    -moz-user-select: none;
+    -o-user-select:none;
+    -khtml-user-select:none;
+    -webkit-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+
+}
+#desktop img{
+    width: 48px;
+    height: 48px;
+}
+/*#desktop span{*/
+/*text-align: center;*/
+/*}*/
+#desktop li:hover{
+    border-radius:5px;
+    /*    background-color: rgba(255,255,255,0.3);*/
+    cursor: Pointer;
+    border:2px solid rgba(255,255,255,0.5);
+    background:rgba(255,255,255,0.3);
+    padding:8px 0;
+    transition:background 0.5s ease;
+}
+.app_name{
+    margin-top: 8px;
+    color: white;
+}
+.footer{
+    height:50px;
+    width:100%;
+    position:fixed;
+    bottom:0;
+    left:0;
+    background:rgba(255,255,255,0.2);
+    border-top:1px solid rgba(0,0,0,0.3);
+    z-index:999;
+}
+.mask{
+    position: fixed;
+    height: 0px;
+    width: 0px;
+    z-index: 99;
+    border: 1px solid rgba(73,199,240,0.7);
+    background: rgba(2,58,148,0.1);
+    display: none;
+}
+.start{
+    float:left;
+    width:70px;
+    height:50px;
+    background:url("/images/windows.png") 10px 2px no-repeat;
+    transition:background-image 0.5s ease;
+}
+.start:hover{
+    background-image:url("/images/windows_hover.png");
+}
+.footer .time{
+    float:right;
+    width:100px;
+    height:50px;
+
+}
+.footer .time span{
+    display:block;
+    color:#fff;
+    text-align:center;
+    padding:6px 0 0 0;
+    font-family:arial;
+    font-size:14px;
+}
+.footer .little_icons{
+    float:right;
+    width:235px;
+    height:50px;
+    background:url("/images/little_icons.png") 0px 14px no-repeat;
+}
+.menu{
+    position:fixed;
+    bottom:51px;
+    left:0;
+    width:407px;
+    height:592px;
+    border-radius:5px;
+    background-image:url("/images/menu.png");
+    display:none;
+    z-index:9;
+}
+.app_name{
+    margin-top: 8px;
+    color: white;
+}
+/*.choose{
+    border-radius: 5px;
+    background-color: rgba(194,116,86,0.4) !important;
+}*/
+#taskbar{
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    height: 50px;
+    width: 100%;
+    line-height: 30px;
+    border-top: 1px solid rgba(0,0,0,0.3);
+    background: rgba(119, 147, 195, 0.3);
+}
+#tencent{
+    width: 430px;
+    height:330px;
+    border-radius: 4px;
+    box-shadow: 0 0 8px black;
+    position: absolute;
+    left: calc(50% - 215px);
+    z-index: 5;
+    top: 200px;
+    background-color: white;
+    transition: transform 0.3s;
+    display: none;
+}
+.small{
+    transform: scale(0) skew(-60deg,0deg);
+    left: 100px !important;
+    top: 600px !important;
+}
+#qqheader{
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    height: 125px;
+    background: url("/images/we_chat.gif") no-repeat;
+    background-size: 430px 125px;
+}
+#left_tool{
+    background: url("/images/qq_tools.png") no-repeat;
+    text-indent: 32px;
+    color: white;
+    font-size: 20px;
+    line-height: 30px;
+    position: relative;
+    top: 5px;
+    left: 3px;
+}
+#right_tool>a{
+    display: block;
+    float: left;
+    width: 30px;
+    height: 30px;
+}
+#right_tool>a:hover {
+    background-color: rgba(7, 118, 209, 0.3);
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+#setting{
+    background: url("/images/setting.png") no-repeat center;
+}
+#small{
+    background: url("/images/small.png") no-repeat center;
+}
+#cls{
+    background: url("/images/close.png") no-repeat center;
+}
+#cls:hover{
+    background-color: #FF5439 !important;
+    border-bottom-right-radius: 4px !important;
+    border-top-right-radius: 4px !important;
+}
+#qqbody{
+    margin-top: 35px;
+    text-align: center;
+}
+.txt{
+    line-height: 35px;
+    width: 240px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #e5e5e5;
+    text-indent: 20px;
+}
+.txt:hover{
+    border-color: #c1c1c1;
+}
+#qqbody li{
+    line-height: 35px;
+}
+.accout{
+    background: url("/images/qq.png") no-repeat left center;
+}
+.accout:focus{
+    background: url("/images/qq_focus.png") no-repeat left center;
+}
+.pwd{
+    background: url("/images/passwd.png") no-repeat left center;
+}
+.pwd:focus{
+    background: url("/images/passwd_focus.png") no-repeat left center;
+}
+.focus_border{
+    height: 0px;
+    width: 0px;
+    display: block;
+    /*变成块级元素才能调宽度*/
+    border-bottom: 1px solid #2b72ff;
+    transition: all 0.3s;
+    /*什么属性发生变化时进行过度*/
+    position: absolute;
+    left: 95px;
+    bottom: 0px;
+    z-index: 99;
+}
+.txt:focus + .focus_border{
+    width: 240px;
+}
+#box>*{
+    display: block;
+    float: left;
+    font-size: 12px;
+    color:#c1c1c1;
+}
+#box>span{
+    background: url("/images/checkbox_normal.png") no-repeat left top 8px;
+    margin-right: 25px;
+    user-select: none;
+    cursor: default;
+    text-indent: 22px;
+}
+#box{
+    width: 240px;
+    margin: auto;
+    line-height: 35px;
+}
+.checked{
+    background-image: url("/images/checkbox_check.png") !important;
+}
+#register{
+    position: absolute;
+    bottom: 5px;
+    left: 10px;
+    color: #c1c1c1;
+    font-size: 12px;
+}
+
+#qrcode{
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    background: url("/images/ewm.png") no-repeat center;
+}
+#qrcode:hover{
+    background: url("/images/ewm_hover.png") !important;
+}
+#face{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    box-shadow: 0 0 5px #46b8da;
+    position: absolute;
+    z-index: 6;
+    left: calc(50% - 35px);
+    top: 85px;
+}
+#task{
+    width: 60%;
+    margin: auto;
+}
+#qq_task{
+    background: url("/images/chat.png") no-repeat;
+    border: 1px solid rgba(255,255,255,0);
+    background-size: 50px 50px;
+    width: 50px;
+    height:50px;
+    float: left;
+    border-radius: 5px;
+    display: none;
+}
+#qq_task:hover{
+    border-color: rgba(255,255,255,0.3);
+    background-color: rgba(255,255,255,0.1);
+}
+#submitBtn{
+    width: 240px;
+    height: 36px;
+    border-radius: 4px;
+    line-height: 32px;
+    box-shadow: 0 0 4px #337EEB;
+    background-color: #00B6FA;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    border: none;
+    outline: none;
+}
+
+.context_menu{
+    width: 250px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+    border: 1px solid #bababa;
+    background: #fff;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+    font-size: 13px;
+    display: none;
+}
+.context_menu .group{
+    border-top: 1px solid #e9e9e9;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.context_menu li{
+    padding: 4px 25px;
+}
+.context_menu li:hover{
+    background:#e6edf6;
+}
+.context_menu span{
+    float: right;
+    color:#a1a192;
+}
